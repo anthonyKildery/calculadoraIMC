@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+  <main>
+    <h2>Calculadora de IMC</h2>
+
+    <div class="texto">
+      <p>A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.</p>
+      <p>Além de saber qual é o seu IMC, essa calculadora também indica qual deve ser o seu peso ideal para alcançar a sua melhor forma, e assim melhorar sua qualidade de vida, garantindo o seu bem estar.</p>
+      <p>Coloque os seus dados na calculadora a seguir e saiba qual é o seu IMC:</p>
+    </div>
+
+    <div class="calculadora">
+      <div class="container">
+        <div class="input">
+          <label>Sexo:</label>
+          <input type="radio" id='masculino'>
+      </div>
+        <div class="input">
+            <label>Idade:</label>
+            <input type="number" id='idade'>
+        </div>
+        <div class="input">
+            <label>Estatura:</label>
+            <input type="number" id='estatura'>
+        </div>
+        <div class="input">
+            <label>Peso:</label>
+            <input type="number" id='peso'>
+        </div>
+        <button id='calcular'>Calcular</button>
+
+        <div class="result" id='resultado'></div>
+      </div> <!--FIM CONTEINER-->
+    </div> <!--FIM CALCULADORA-->
+
+    <h2>O que é IMC?</h2>
+
+    <div class="texto">
+      <p>IMC significa Índice de Massa Corporal e é um parâmetro utilizado para saber se o peso está de acordo com a altura, o que pode interferir diretamente na saúde e qualidade de vida da pessoa. Assim, a partir do resultado do IMC é possível saber também se a pessoa está dentro do peso ideal e também identificar sobrepeso, obesidade ou desnutrição em crianças, adolescentes, adultos ou idosos.</p>
+      <p>Dessa forma, com o cálculo do IMC, é possível fazer algumas mudanças na rotina diária, como mudar a dieta, melhorar os hábitos alimentares e praticar atividade física de forma regular, por exemplo.</p>
+
+      <h2>Como é calculado?</h2>
+
+      <p>O IMC é a relação entre peso e altura e o cálculo é feito de acordo com a fórmula:</p>
+
+      <div class="texto_destaque">
+        <p>IMC = peso / (altura x altura)</p>
+      </div>
+
+      <p>O peso deve estar em kg e a altura em metros, e o resultado é dado em kg/m2. Depois de obter o resultado, é possível verificar em que faixa o IMC se encontra, podendo indicar:</p>
+
+      <ul>
+        <li><strong>Magreza</strong>, quando o resultado é menor que 18,5 kg/m2;</li>
+        <li><strong>Normal</strong>, quando o resultado está entre 18,5 e 24,9 kg/m2;</li>
+        <li><strong>Sobrepeso</strong>, quando o resultado está entre 24,9 e 30 kg/m2;</li>
+        <li><strong>Sobrepeso</strong>, quando o resultado é maior que 30 kg/m2.</li>
+      </ul>
+
+      <p>Assim, de acordo com o resultado do IMC é possível também saber se existe algum risco de desenvolver doenças. Isto porque quanto maior é o valor do IMC, maior é a quantidade de gordura acumulada no corpo e maior é o risco da pessoa ter doenças como pressão alta, diabetes e doenças cardíacas.</p>
+    </div>
+  </main> <!--FIM MAIN-->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
