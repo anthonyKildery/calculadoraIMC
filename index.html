@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculadora IMC</title>
 </head>
 <body>
+
+  <header>
+    <h1 class="selecionar">Calculadora IMC</h1>
+  </header>
+
   <main>
     <h2>Calculadora de IMC</h2>
 
@@ -17,29 +23,42 @@
       <p>Coloque os seus dados na calculadora a seguir e saiba qual é o seu IMC:</p>
     </div>
 
-    <div class="calculadora">
-      <div class="container">
-        <div class="input">
-          <label>Sexo:</label>
-          <input type="radio" id='masculino'>
-      </div>
-        <div class="input">
-            <label>Idade:</label>
-            <input type="number" id='idade'>
-        </div>
-        <div class="input">
-            <label>Estatura:</label>
-            <input type="number" id='estatura'>
-        </div>
-        <div class="input">
-            <label>Peso:</label>
-            <input type="number" id='peso'>
-        </div>
-        <button id='calcular'>Calcular</button>
+    <div class="usuario">
+      <div class="calculadora">
+        <div class="container">
 
-        <div class="result" id='resultado'></div>
-      </div> <!--FIM CONTEINER-->
-    </div> <!--FIM CALCULADORA-->
+          <div class="input">
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" id="masculino" checked="checked">
+            <label class="cheque selecionar" for="masculino">Masculino</label>
+
+            <input type="radio" name="sexo" id="feminino">
+            <label class="cheque selecionar" for="feminino">Feminino</label>
+          </div>
+
+          <div class="input">
+              <label>Idade:</label>
+              <input type="number" id='idade' placeholder="anos">
+          </div>
+
+          <div class="input">
+              <label>Estatura:</label>
+              <input type="number" id='estatura' placeholder="m">
+          </div>
+
+          <div class="input">
+              <label>Peso:</label>
+              <input type="number" id='peso' placeholder="kg">
+          </div>
+
+          <a href="#resultado">
+            <button id='calcular'>Calcular</button>
+          </a>
+        </div> <!--FIM CONTEINER-->
+      </div> <!--FIM CALCULADORA-->
+
+      <div class="result" id='resultado'></div>
+    </div>  <!--FIM USUARIO-->
 
     <h2>O que é IMC?</h2>
 
@@ -67,6 +86,21 @@
       <p>Assim, de acordo com o resultado do IMC é possível também saber se existe algum risco de desenvolver doenças. Isto porque quanto maior é o valor do IMC, maior é a quantidade de gordura acumulada no corpo e maior é o risco da pessoa ter doenças como pressão alta, diabetes e doenças cardíacas.</p>
     </div>
   </main> <!--FIM MAIN-->
+
+  <div class="final">
+    <div class="contatos">
+      <a href="https://github.com/anthonyKld"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://acailandia.ifma.edu.br">
+        <img src="img/IFMA.png" width="260">
+      </a>
+    </div>
+    <p>Desenvolvedor: Anthony Kildery S. Alencar</p>
+    <p>Orientador: Prof. Carlos</p>
+    <p>
+      <a href="https://github.com/anthonyKld/calculadoraIMC">Diretorio do projeto no github</a>
+    </p>
+    <p>Conteúdo pego no site <a href="https://www.tuasaude.com/calculadora/imc/"><strong>Tua Saúde</strong></a></p>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

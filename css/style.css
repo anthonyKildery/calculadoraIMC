@@ -1,0 +1,205 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root {
+  --preto: #000;
+  --branco: white;
+  --cinza: rgb(172, 172, 172);
+  --azul: rgb(0, 81, 255);
+}
+
+/*  Geral  */
+body {
+  text-align: justify;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: rgb(236, 236, 236);
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 30px;
+  background-color: var(--branco);
+}
+
+header {
+  text-align: center;
+  background-color: var(--azul);
+  padding: 30px;
+}
+
+/*  */
+header h1 {
+  color: var(--branco);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--azul);
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+li {
+  padding-bottom: 8px;
+}
+
+/*  Calculadora IMC  */
+
+.usuario {
+  display: flex;
+  direction: inherit;
+  padding: auto;
+  align-items: center;
+  justify-content: center;  
+}
+
+.calculadora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(200, 220, 255);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: var(--cinza) 0.8px solid;
+  width: 400px;
+  height: 600px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.cheque {
+  position: relative;
+  border: 1px solid var(--cinza);
+  border-radius: 4px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"]:checked + .cheque {
+  border: 1px solid var(--azul);
+  color: var(--azul);
+}
+
+.input {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input input {
+  font-size: 17px;
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--cinza);
+  outline: 0;
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  height: 50px;
+  background: var(--azul);
+  color: var(--branco);
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--cinza);
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  padding-top: 60px;
+  margin-left: 20px;
+}
+
+.final {
+  background-color: var(--azul);
+  color: var(--branco);
+  padding-left: 15%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.final a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
+.final a:hover {
+  color: rgb(226, 226, 226);
+}
+
+.contatos {
+  display: flex;
+  flex-direction: row;
+}
+
+.contatos i {
+  font-size: 70px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.contatos img {
+  cursor: pointer;
+}
+
+.selecionar {
+  cursor: pointer;
+}
+/*  Resposive  */
+@media screen and (max-width: 938px) {
+
+  main {
+    width: 100%;
+  }
+
+  .usuario {
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    align-items: center;
+    justify-content: center;  
+  }
+  
+  .result {
+    margin-left: 0px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 100px;
+    padding-top: 30px;
+  }
+}
